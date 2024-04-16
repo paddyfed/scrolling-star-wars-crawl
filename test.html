@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        padding: 0;
+        margin: 0;
+        height: 300vh;
+      }
+      div {
+        height: 100vh;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+      }
+      p {
+        position: fixed;
+        opacity: 0;
+        animation: fade linear;
+        animation-timeline: scroll();
+      }
+      @keyframes fade {
+        0% {
+          opacity: 0;
+        }
+        25% {
+          opacity: 1;
+        }
+        75% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>A long time ago in a galaxy far, <br />far away....</p>
+    </div>
+  </body>
+</html>

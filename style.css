@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  min-width: 900px;
+  background-color: black;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+  background-image: url("stars.gif");
+  background-attachment: fixed;
+}
+
+.gffa {
+  color: #06d4ec;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-size: 3rem;
+  background-color: black;
+}
+
+.gffa p {
+  height: 100vh;
+  animation: fade-gffa linear forwards;
+  animation-timeline: scroll();
+  opacity: 0;
+  position: fixed;
+  z-index: 1;
+}
+
+.star_wars {
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.opening_crawl {
+  min-height: 100vh;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: start;
+  color: #fdc625;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 100vh;
+}
+
+.film_title {
+  font-size: 3rem;
+  width: fit-content;
+  text-transform: uppercase;
+  align-self: center;
+  white-space: nowrap;
+}
+
+.opening_crawl p {
+  margin: 1rem;
+  padding: 0;
+  text-align: justify;
+}
+
+.episode_number {
+  align-self: center;
+}
+
+nav ul {
+  color: red;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+nav ul li {
+  width: fit-content;
+  height: 100px;
+  margin: 25px;
+}
+
+@keyframes fade-gffa {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
